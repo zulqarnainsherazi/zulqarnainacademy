@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Layout</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#ffffff;
+  padding:20px;
+}
+
+.box{
+  background:linear-gradient(135deg,#7a0000,#b30000);
+  color:white;
+  border-radius:6px;
+  padding:10px;
+}
+
+.flex{
+  display:flex;
+  gap:10px;
+}
+
+.col{
+  flex:1;
+  min-height:200px;
+}
+
+.small-box{
+  background:#eee;
+  color:#000;
+  border-radius:6px;
+  padding:8px;
+  text-align:center;
+  flex:1;
+}
+
+.inner{
+  display:flex;
+  gap:8px;
+  margin-top:8px;
+}
+
+.row{
+  margin-top:10px;
+}
+
+.row .box{
+  flex:1;
+  text-align:left;
+}
+
+/* Bottom rows */
+.four .box{flex:1;}
+.five .box{flex:1;}
+
+/* Responsive */
+@media(max-width:900px){
+  .flex{
+    flex-direction:column;
+  }
+}
+
+@media(max-width:600px){
+  .inner{
+    flex-wrap:wrap;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Top Section -->
+<div class="flex">
+  
+  <!-- Left complex box -->
+  <div class="box col">
+    <div>1</div>
+
+    <div class="inner">
+      <div class="small-box">1</div>
+      <div class="small-box">2</div>
+      <div class="small-box">3</div>
+    </div>
+
+    <div class="inner">
+      <div class="small-box">1</div>
+      <div class="small-box">2</div>
+      <div class="small-box">3</div>
+      <div class="small-box">4</div>
+    </div>
+
+    <div class="inner">
+      <div class="small-box">1</div>
+      <div class="small-box">2</div>
+      <div class="small-box">3</div>
+      <div class="small-box">4</div>
+      <div class="small-box">5</div>
+    </div>
+  </div>
+
+  <!-- Middle -->
+  <div class="box col">2</div>
+
+  <!-- Right -->
+  <div class="box col">3</div>
+
+</div>
+
+<!-- Second Row -->
+<div class="flex row four">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+</div>
+
+<!-- Third Row -->
+<div class="flex row five">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+</div>
+
+</body>
+</html>

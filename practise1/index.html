@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+      table,tr,th,td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        border-spacing: 5px;
+      }
+      th{
+        background-color: aqua;
+      }
+      td{
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Laraib Sherazi &lt;&#128516;&gt;</h1>
+    <h2>Laraib</h2>
+    <h3>Laraib</h3>
+    <h4>Laraib</h4>
+    <h5>this is comment tag</h5>
+    <h6>Laraib</h6>
+    <hr>
+    <p>I am doing software engineering,it's my 6th semester,<br>
+       which type of courses should I do for better my future for 
+       best jobs and to get better opportunities</p>
+<hr>
+       <P><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. </b><i>Atque commodi enim perspiciatis asperiores ipsum autem inventore iure unde accusamus molestias id ducimus modi assumenda veritatis voluptatum nesciunt, </i><small>placeat voluptate voluptates eos voluptatibus ratione maiores optio facilis in.</small><strong> 10 <sup>2</sup> 10<sub>2</sub> </strong>Sint optio esse provident ratione molestiae! Corporis odio ullam, nulla esse fugiat explicabo!</P>
+
+       <hr>
+       <ol>
+        <h2>Grocery</h2>
+        <li>Milk</li>
+        <li>Suger</li>
+        <li>Noodles</li>
+        <li>oil</li>
+       </ol>
+       <hr>
+       <ol type="A">
+        <h2>Grocery</h2>
+        <li>Milk</li>
+        <li>Suger</li>
+        <li>Noodles
+          <ul>
+            <li>red noodles</li>
+            <li>green noodles</li>
+            <li>soop noodles</li>
+          </ul>
+        </li>
+        <li>oil</li>
+       </ol>
+       <hr>
+       <ul>
+        <h2>Grocery</h2>
+        <li>Milk</li>
+        <li>Suger</li>
+        <li>Noodles</li>
+        <li>oil</li>
+       </ul>
+       <hr>
+       <!--Link in tab-->
+       <a href="https://www.google.com">Google</a><br>
+       <!--Link in tab-->
+       <a href="https://www.google.com" target="_blank">Google new tab</a><br>
+       <a href="index2.html"><h1>Page 2</h1></a>
+       <br>
+       <hr>
+       <img src="img1.jpg" width="350px">
+       <hr>
+       <vedio src="gigvedio.mp4" width="350px" controls poster="img1.jpg">Vedio</vedio>
+       <!--autoplay loop muted poster(use for thumnail)-->
+       <hr>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4?si=YB0OmkLHfnW3kogN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <iframe src="https://www.w3schools.com/html/html_entities.asp" width="500" height="500"></iframe>
+       <hr>
+       <table>
+        <thead>
+          <tr>
+            <th>subjects</th>
+            <th>Theory</th>
+            <th>Practical</th>
+            <th>Total Marks</th>
+            <th>Grades</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>English</td>
+            <td>75</td>
+            <td>-</td>
+            <td>75</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>Urdu</td>
+            <td>80</td>
+            <td>-</td>
+            <td>80</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Maths</td>
+            <td>85</td>
+            <td>-</td>
+            <td>85</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Physics</td>
+            <td>75</td>
+            <td>30</td>
+            <td>105</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>Computer</td>
+            <td>90</td>
+            <td>30</td>
+            <td>120</td>
+            <td>A</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="5">Result: PASS</th>
+          </tr>
+        </tfoot>
+       </table>
+       <hr>
+       
+       <div class="container">
+        <div class="body">
+       <h1 class="main">Payment Form</h1>
+       <hr>
+       <h3>User Information</h3>
+       <p>Name: <input type="text" name="name" required placeholder="Enter your name"></p>
+       <fieldset>
+        <legend>Gender</legend>
+        <p>Male <input type="radio" name="gender" id="gender">
+       Female <input type="radio" name="gender" id="gender" required></p></fieldset>
+      <p>Address: <textarea name="address" id="address" placeholder="enter a address"></textarea></p>
+      <p>Email: <input type="email" id="email" required placeholder="@gmail.com"></p>
+      <p>Pincode: <input type="number" required placeholder="1234"></p>
+      <hr>
+      <h2>Payment Information</h2>
+      <p>Card type: 
+      <select name="card-type" id="card-type" required>
+        <option vlaue="">--select a caed type</option>
+        <option value="vise">visa</option>
+        <option value="rupay">rupay</option>
+        <option value="mastercard">mastercard</option>
+      </select></p>
+      <p>Card Number: <input type="number" name="cardnum" id="cardnum" required></p>
+      <p>Expiration Date: <input type="date" name="expdate" id="expdate" required></p>
+      <p>CVV: <input type="password" name="password" id="password" required></p>
+      <input type="submit" value="Pay Now">
+      </div>
+      </div>
+      </body>
+</html>

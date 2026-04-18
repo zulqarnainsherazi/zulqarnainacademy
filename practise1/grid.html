@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid css</title>
+    <style>
+        .container{
+            display: grid;
+           /* this line make responsiveness*/grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+            grid-gap: 20px;
+            grid-auto-rows: minmax(100px auto);
+           /* gutter*/column-gap: 40px;
+
+        }
+        .items{
+            background-color: aqua;
+            border: 3px solid yellowgreen;
+            border-radius: 3px;
+        }
+        /*#item-1{
+            grid-column-start: 2;
+             grid-column-end: 3;
+             grid-row-start: 2;
+             grid-row-end: 3;
+        }
+#item-2{
+    grid-row-start: 1;
+             grid-row-end: 3;
+
+}*/
+#item-1{
+    grid-row-start: 1;
+             grid-row-end: 30;
+}
+#item-2{
+    grid-row-start: 1;
+             grid-row-end: 12;
+}
+#item-3{
+    grid-row-start: 12;
+             grid-row-end: 30;
+   
+            
+}
+#item-4{
+    grid-row-start: 1;
+             grid-row-end: 6;
+}
+#item-5{
+    grid-row-start: 6;
+             grid-row-end: 15;
+}
+#item-6{
+    grid-row-start: 15;
+             grid-row-end: 30;
+}
+#item-7{
+    grid-row-start: 1;
+             grid-row-end: 5;
+}
+#item-8{
+    grid-row-start: 5;
+             grid-row-end: 10;
+}
+#item-9{
+    grid-row-start: 10;
+             grid-row-end: 15;
+}
+#item-10{
+    grid-row-start: 15;
+             grid-row-end:30;
+}
+#item-11{
+    grid-row-start: 1;
+             grid-row-end: 5;
+}
+#item-12{
+    grid-row-start: 5;
+             grid-row-end: 8;
+}
+#item-13{
+    grid-row-start: 8;
+             grid-row-end: 11;
+}
+#item-14{
+    grid-row-start: 11;
+             grid-row-end:16;
+}
+#item-15{
+    grid-row-start: 16;
+             grid-row-end:23;
+}
+#item-16{
+    grid-row-start: 23;
+             grid-row-end:30;
+}
+#item-17{
+    grid-row-start: 1;
+             grid-row-end:2.5;
+}
+#item-18{
+    grid-row-start:2.5;
+             grid-row-end:4.5;
+}
+#item-19{
+    grid-row-start: 4.5;
+             grid-row-end:6.5;
+}
+#item-20{
+    grid-row-start: 6.5;
+             grid-row-end:18.5;
+}
+#item-21{
+    grid-row-start: 8.5;
+             grid-row-end:10.5;
+}
+#item-22{
+    grid-row-start: 10.5;
+             grid-row-end:12.5;
+}
+#item-23{
+    grid-row-start: 12.5;
+             grid-row-end:14.5;
+}
+#item-24{
+    grid-row-start: 16.5;
+             grid-row-end:18.5;
+}
+#item-25{
+    grid-row-start: 20.5;
+             grid-row-end:22.5;
+}
+#item-26{
+    grid-row-start: 22.5;
+             grid-row-end:24.5;
+}
+#item-27{
+    grid-row-start: 24.5;
+             grid-row-end:26.5;
+}
+#item-28{
+    grid-row-start:26.5;
+             grid-row-end:28.5;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item-1">Dabba 1</div>
+        <div class="items" id="item-2">Dabba 2</div>
+        <div class="items" id="item-3">Dabba 3</div>
+        <div class="items"id="item-4">Dabba 4</div>
+        <div class="items" id="item-5">Dabba 5</div>
+        <div class="items" id="item-6">Dabba 6</div>
+        <div class="items" id="item-7">Dabba 7</div>
+        <div class="items" id="item-8">Dabba 8</div>
+        <div class="items"id="item-9">Dabba 9</div>
+        <div class="items" id="item-10">Dabba 10</div>
+        <div class="items" id="item-11">Dabba 11</div>
+        <div class="items" id="item-12">Dabba 12</div>
+        <div class="items" id="item-13">Dabba 13</div>
+        <div class="items"id="item-14">Dabba 14</div>
+        <div class="items" id="item-15">Dabba 15</div>
+        <div class="items" id="item-16">Dabba 16</div>
+        <div class="items" id="item-17">Dabba 17</div>
+        <div class="items" id="item-18">Dabba 18</div>
+        <div class="items"id="item-19">Dabba 19</div>
+        <div class="items" id="item-20">Dabba 20</div>
+        <div class="items" id="item-21">Dabba 21</div>
+        <div class="items" id="item-22">Dabba 22</div>
+        <div class="items" id="item-23">Dabba 23</div>
+        <div class="items"id="item-24">Dabba 24</div>
+        <div class="items" id="item-25">Dabba 25</div>
+        <div class="items" id="item-26">Dabba 26</div>
+        <div class="items" id="item-27">Dabba 27</div>
+        <div class="items" id="item-28">Dabba 28</div>
+       
+    </div>
+    
+</body>
+</html>

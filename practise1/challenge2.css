@@ -1,0 +1,30 @@
+.box{
+    
+    border: 5px solid pink;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+border-radius: 12px;
+color: rgb(255, 10, 10);
+background-color: antiquewhite;
+}
+.container{
+    display: grid;
+    gap:20px;
+grid-template-columns: repeat(4,1fr);
+
+}
+p{
+    text-align: center;
+    color: brown;
+}
+@media (max-width: 1000px) {
+.container,p{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media (max-width: 600px) {
+.container,p{
+    grid-template-columns: 1fr;
+}
+}

@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+    <style>
+      body{
+  margin:0;
+  font-family: Arial, sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 200px 1fr 250px;
+  grid-template-rows: 100px 1fr 80px;
+  gap: 15px;
+  height: 100vh;
+  padding: 15px;
+  background: #ddd;
+}
+
+/* Common Style */
+.container > div{
+  background: #e6a85c;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Layout Placement */
+
+.nav{
+  grid-row: span 3;
+}
+
+.header{
+  grid-column: 2 / 4;  /* spans article + ads */
+  grid-row: 1 / 2;
+}
+
+.article{
+  grid-column: span 1;
+}
+
+.ads{
+  grid-column: span 3;
+}
+
+.footer{
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="navbar">Navbar</div>
+    <div class="header">Header</div>
+    <div class="Artical">Artical</div>
+    <div class="Footer">footer</div>
+    <div class="Adds">Adds</div>
+</div>
+</body>
+</html>

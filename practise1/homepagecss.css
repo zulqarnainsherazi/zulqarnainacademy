@@ -1,0 +1,209 @@
+ *{
+      
+      box-sizing:border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: none;
+    }
+    body{
+      background:#f5f7fb;
+      color:#333;
+      margin: 0%;
+    }
+   
+    .header{ 
+      text-align: center;
+      font-style: oblique;
+      font-size:24px;
+      font-weight:bold;
+      color:#2b6cff;
+      display: flex;
+    }
+    .navbar{
+      display: flex;
+      position:sticky;
+     
+      top:0;
+      background-color: white;
+      padding: 5px 40px;
+      margin-left: auto;
+      width: 100%;
+      
+     
+    }
+    .navbar a{
+      
+      text-decoration:none;
+      color:#333;
+      margin-right: auto;
+      font-weight:500;
+     
+      text-align: right;
+      
+    }
+
+    .navbar a:hover{
+      color:#2b6cff;
+    }
+    .btn{ 
+      background:#2b6cff;
+      color:white !important;
+      padding:7px 18px;
+      border-radius:10px;
+      
+      margin-right: auto;
+      
+    }
+    /* Hero Section */
+    .hero{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:70px 8%;
+      flex-wrap:wrap;
+      background-image: url(img2.jfif);
+      object-fit: fill;
+      background-repeat: no-repeat;
+       background-position:center;
+       background-size: cover;
+       height: 90vh;
+      
+      
+    }
+
+    .herotext{
+      max-width:550px;
+    }
+
+    .herotext h1{
+      font-size:48px;
+      margin-bottom:20px;
+    font-style: bold;
+    }
+
+    
+
+    .herotext p{
+      margin-bottom:30px;
+      line-height:1.6;
+      font-weight: 500;
+      font-style: oblique;
+    }
+
+    .herobtns a{
+      text-decoration:none;
+      padding:12px 22px;
+      border-radius:8px;
+      margin-right:15px;
+      font-weight:600;
+    }
+
+    .primary{
+      background:#2b6cff;
+      color:white;
+    }
+
+    .secondary{
+      background:#2b6cff;
+      color:white;
+    }
+
+    .hero img{
+      width:420px;
+      max-width:100%;
+    }
+    
+    /* Courses */
+    .features{
+      padding:60px 8%;
+      background:white;
+      text-align:center;
+    }
+#f2{
+    color: #2b6cff;
+}
+    .courses{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:25px;
+      margin-top:40px;
+      background:#f5f7fb;
+      padding:25px;
+      border-radius:12px;
+    }
+    h6{
+        color: black;
+    }
+    .choose{
+      padding:60px 8%;
+      text-align:center;
+    }
+    .choose h2{
+      font-size:34px;
+      margin-bottom:40px;
+    }
+     .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:14px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.05);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#2b6cff;
+    }
+
+    /* CTA */
+    .cta{
+      margin:70px 8%;
+      background:#2b6cff;
+      color:white;
+      padding:50px;
+      border-radius:16px;
+      text-align:center;
+    }
+
+    .cta h2{
+      margin-bottom:20px;
+      font-size:32px;
+    }
+
+    .cta a{
+      text-decoration:none;
+      background:white;
+      color:#2b6cff;
+      padding:12px 24px;
+      border-radius:200px;
+      font-weight:bold;
+    }
+
+    /* Footer */
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#161d2a;
+     color: white;
+      margin-top:40px;
+      text-decoration: none;
+    }
+
+@media all and (max-width:800px){
+  .navbar{
+    flex-direction: column;
+  }
+  .btn{
+    margin-right: 0;
+    margin-top: 5px;
+  }
+}
