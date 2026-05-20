@@ -4,16 +4,20 @@ padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 scroll-behavior:smooth;
+
 }
 
 body{
 background:linear-gradient(135deg,#f1f5f9,#e0f2fe);
 color:#1e293b;
+
 }
 
 /* ================= NAVBAR ================= */
 .logo1{
+  
 display:flex;
+flex-wrap:wrap;
 align-items:center;
 gap:10px;
 font-weight:600;
@@ -35,7 +39,9 @@ z-index:1000;
 }
 
 .nav-container{
-display:flex;
+
+  display:flex;
+  flex-wrap:wrap;
 justify-content:space-between;
 align-items:center;
 padding:15px 8%;
@@ -48,7 +54,9 @@ font-weight:700;
 }
 
 nav{
+
 display:flex;
+flex-wrap:wrap;
 gap:25px;
 align-items:center;
 }
@@ -149,6 +157,7 @@ cursor:pointer;
 height:90vh;
 background:url('Tutorining.png') center/cover no-repeat;
 display:flex;
+flex-wrap:wrap;
 align-items:center;
 justify-content:center;
 text-align:center;
@@ -209,7 +218,8 @@ flex-wrap:wrap;
 
 .form-image img{
 width:100%;
-max-width:450px;
+height:auto;
+object-fit:cover;
 border-radius:20px;
 box-shadow:0 20px 40px rgba(0,0,0,0.15);
 animation:float 4s ease-in-out infinite;
@@ -231,6 +241,7 @@ margin-bottom:20px;
 
 form{
 display:flex;
+flex-wrap:wrap;
 flex-direction:column;
 gap:15px;
 }
@@ -430,6 +441,7 @@ display:none;
 
 nav.active{
 display:flex;
+flex-wrap:wrap;
 }
 
 .menu-toggle{
@@ -449,3 +461,85 @@ padding:25px;
 }
 
 }
+/* ===== MOBILE RESPONSIVE FIX ===== */
+
+*{
+box-sizing:border-box;
+}
+
+html,body{
+overflow-x:hidden;
+width:100%;
+}
+
+/* MAIN CONTAINER */
+.form-container{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+width:100%;
+}
+
+/* LEFT + RIGHT SECTIONS */
+.form-image,
+.form-content{
+flex:1 1 400px;
+max-width:100%;
+}
+
+/* IMAGES */
+.form-image img{
+width:100%;
+height:auto;
+border-radius:10px;
+display:block;
+margin-bottom:15px;
+}
+
+/* FORM */
+form{
+width:100%;
+}
+
+form input,
+form select,
+form textarea,
+form button{
+width:100%;
+max-width:100%;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.form-container{
+flex-direction:column;
+padding:15px;
+}
+
+.form-image,
+.form-content{
+width:100%;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.popup-box{
+width:95%;
+max-width:95%;
+padding:20px;
+}
+
+.nav-container{
+padding:10px 15px;
+}
+
+.logo{
+font-size:18px;
+}}

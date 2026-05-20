@@ -141,8 +141,6 @@ font-size:26px;
 color:#fff;
 cursor:pointer;
 }
-
-
 /* ================= HERO ================= */
 .hero{
 height:80vh;
@@ -153,7 +151,7 @@ justify-content:center;
 text-align:center;
 color:white;
 position:relative;
-padding-top:70px;
+padding-top:0px;
 animation:fadeIn 1.5s ease-in-out;
 }
 .hero::after{
@@ -245,4 +243,42 @@ footer a{color:#cbd5e1;text-decoration:none;display:block;margin-bottom:6px;}
 .hero h1{font-size:28px;}
 .hero p{font-size:16px;}
 form .input-group label{top:12px;}
+}
+/* ===== MOBILE NAVBAR ===== */
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:white;
+}
+
+/* MOBILE VIEW */
+@media(max-width:768px){
+
+nav{
+display:none;
+flex-direction:column;
+background:#0f172a;
+position:absolute;
+top:70px;
+right:0;
+width:100%;
+padding:20px;
+z-index:999;
+}
+
+nav.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav a{
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
 }

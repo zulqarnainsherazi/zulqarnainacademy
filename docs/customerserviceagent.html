@@ -13,13 +13,13 @@
 </head>
 <body>
 
-<!-- ================= NAVBAR ================= -->
+ <!-- ================= NAVBAR ================= -->
 <header>
 <div class="nav-container">
 <div class="logo1">
 <img src="academylogozulqar-removebg-preview.png" alt="Zulqarnain Academy Logo">
 <div class="logo">Zulqarnain Academy</div>
-</a>
+
 </div>
 <nav id="navMenu">
 <a href="index.html">Home</a>
@@ -215,9 +215,15 @@ form.addEventListener("submit", async function(e){
 </script>
 <script>
 
-function toggleMenu(){
-   document.getElementById("navMenu").classList.toggle("active");
+function toggleMenu() {
+
+  const nav = document.getElementById("navMenu");
+
+  nav.classList.toggle("active");
+
 }
+
+</script>
 
 </script>
 </body>
